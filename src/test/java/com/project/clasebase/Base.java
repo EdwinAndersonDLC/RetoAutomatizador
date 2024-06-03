@@ -1,4 +1,4 @@
-package com.project.ClaseBase;
+package com.project.clasebase;
 import java.util.List;
 import java.util.Set;
 import org.openqa.selenium.By;
