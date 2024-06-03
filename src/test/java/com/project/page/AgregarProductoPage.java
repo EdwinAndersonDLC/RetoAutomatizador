@@ -34,7 +34,7 @@ public class AgregarProductoPage {
     }
 
 
-    public void  selecciono_la_subcategoria(String subcategoria){
+    public void selecciono_la_subcategoria(String subcategoria){
         try{
 
             driver.findElement(By.xpath("//a[contains(text(),'"+subcategoria+"')]")).click();
@@ -46,7 +46,7 @@ public class AgregarProductoPage {
         }
     }
 
-    public void   selecciono_los_productos()throws InterruptedException{
+    public void selecciono_los_productos()throws InterruptedException{
         Thread.sleep(3000);
         int i=1;
 
@@ -92,10 +92,9 @@ public class AgregarProductoPage {
             JavascriptExecutor executor2 = (JavascriptExecutor)driver;
             int j=1;
             while (j <= c){
-
-                j=j+1;
                 Thread.sleep(200);
                 executor2.executeScript("arguments[0].click();", cantproducto);
+                j=j+1;
             }
             i=i+1;
         }
@@ -103,7 +102,6 @@ public class AgregarProductoPage {
         WebElement e = driver.findElement(By.xpath("//div[@data-fs-cart-quantity=\"true\"]/span"));
         cantcar= Integer.parseInt(e.getText());
     }
-
 
     public void   valido_nombre_de_los_productos_en_el_carrito() throws InterruptedException {
         Thread.sleep(2000);
