@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.apipost.Post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-06-04 03:12:46 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:21]"><span>[1.1:21]</span> <span>Test API con metodo POST</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/apipost/Post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">test post</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">POST</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:21]</span>
+                <span class="scenario-name">Test API con metodo POST</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>612</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:5002/api/members&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">46</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic YWRtaW46YWRtaW4=&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;:&quot;tedst&quot;,&quot;gender&quot;:&quot;male&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">463</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">15:12:46.527 request:
+1 &gt; POST http://localhost:5002/api/members
+1 &gt; Authorization: Basic YWRtaW46YWRtaW4=
+1 &gt; Content-Type: application/json
+1 &gt; Content-Length: 32
+1 &gt; Host: localhost:5002
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.22)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tedst&quot;,&quot;gender&quot;:&quot;male&quot;}
+
+15:12:46.587 response time in milliseconds: 59
+1 &lt; 201
+1 &lt; X-Powered-By: QA BOX LET&#39;S TEST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-RateLimit-Limit: 2
+1 &lt; X-RateLimit-Remaining: 1
+1 &lt; Date: Tue, 04 Jun 2024 20:12:46 GMT
+1 &lt; X-RateLimit-Reset: 1717531976
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 40
+1 &lt; ETag: W/&quot;28-450tVd/GZWQwbNnjQwMg5/1Tq7M&quot;
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id&quot;:23,&quot;name&quot;:&quot;tedst&quot;,&quot;gender&quot;:&quot;male&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">15:12:46.648 [print] {
+  &quot;id&quot;: 23,
+  &quot;name&quot;: &quot;tedst&quot;,
+  &quot;gender&quot;: &quot;male&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:5002/api/download?name=Yey.jpg&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic YWRtaW46YWRtaW4=&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">15:12:46.650 request:
+2 &gt; GET http://localhost:5002/api/download?name=Yey.jpg
+2 &gt; Authorization: Basic YWRtaW46YWRtaW4=
+2 &gt; Host: localhost:5002
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.22)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+15:12:46.661 response time in milliseconds: 11
+2 &lt; 200
+2 &lt; X-Powered-By: QA BOX LET&#39;S TEST
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Content-disposition: attachment; filename=Yey.jpg
+2 &lt; Content-type: image/jpeg
+2 &lt; Date: Tue, 04 Jun 2024 20:12:46 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Keep-Alive: timeout=5
+2 &lt; Transfer-Encoding: chunked
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">15:12:46.664 src/test/java/apipost/Post.feature:15
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 11, url: http://localhost:5002/api/download?name=Yey.jpg, response: 
+���� JFIF      �� � 	( &amp;!1!%)+...383-7(-.+
+
+
+-% %--------------------------------------------------��  � � ��              �� K    !1AQ&quot;2aq���#BRbr��3Cs���c���$4T�����DSt�����             �� 6      !1AQaq&quot;2��B����3�#R�4C���   ? �4@@@@@�Z;��F��7y���ET��,B���ED�$c����s���5ǻ�V�����4�LF]�;o�(�z���2�5�����_�b:J�l�;cj�y�36^���y($�j*���e�	���ܑª�Z4lW�f��e�#�c�����8M���y!��vE�E�_!�aNS���º���J���j�˞3n+��`��͜Q�ō�{�?�7Y�W���m\?}�32�U.����}VA�to�a]
+x��l&gt;��+�B����M��I����F������o��eK(�QkW�B�(�(�(�(�(�(�(�(�(�W�HS4��{�y����aTy����	M�(��� �[���wϙ�Oz���/)|5l��� �ӫE�=�
+�O����
+��d��\�Kbt����
+M�A���I�(�#�U���Y\�aSCIt�ȉ�q������=X��_�7���|�߆�YMU��P]���P���N��~L���Σ�Ze�&gt;I|�||Mso�Sk�eʻa�p�T&#39;�/�t+�`B�&lt;d:*vQʛ�#r��#ַ��r�o�4^W��Jq{�m�p5v5���ؾ���ԁ�#x�WjQ�SO��Z)&#39;�c䇸�_�گ����5��q[��o�y?ܭn��fǳv�M��7�n&gt;*~����F�[V�f.�6�e[ܳ��!@@@@@@@@N����g=���SU���9�^Ȟ�%kۧ���1+g����p�:��,����WT+X�&gt;w
+��&#39;�m)%Գ�� �k�U�i��b��}����n1�z&quot;��JΗ��q8	p�P�v�����fӍ\��FjL��ts`łî�Vc�w��y���[Nr�嚖�k^Q�µ����kF��A*�^�����#&gt;}?
+�n�/x��溚�I���2�.o�����	&#39;±��Y}ܝ&lt;��etc��N��s� ��u}�6���^��Em8�+�w*J���t�:����*�&gt;ch�C�\h=�tcc������g^w���d�(�(�(�(�(�(�(���{Up�}��&quot;�&lt;��U��cD9�^�̚�]��4G����,�nO?� &lt;+�]t����S�F��yUufk9ฅ ��%�*ɶ2��Dl�H�*��4d�I�L�:�u�z�������8���R]Q�
+I��T2��dL*	#tB¡�&quot;)v�$O:��Nb�{��/i��t�t��Q�߹�gr������6*WKr�g��O�����Ԗ0q�^�IP\�u(O͈҅&gt;�S�k�Uj�i\��Oѯ�JR��g��;���&quot;	O�lx�By�&lt;woߧ�&quot;�{�~f��7/�����h�@@@@@@-�ĬH�9���� �´��&quot;��#1���9��ƴ�y�
+�r���K�nO�c�M*����g��橽�$�]���ث-ƒ�L���n��&amp;J�,ў�8E�}3R�r,�X������fc����]�HЅW �u���sMì�|rx��������A��j%Ry{&gt;���O�S��(�۝��a�6�-��2=�5̬�yV���� �cTm�YCĞW�bB՘���SU�H�ګ�&quot;��7D/P3t/*ޣ�O�&quot;ɡtߣ�y��e
+�&#39;�I��G�U��Q&quot;�c+��� #6C�Ţ�aTk�M&gt;资��twju��n�X�87��ױ��֢��]N.��
+~����p�
+ �
+ �
+ �
+ �
+ �4Ιm�0�l���vG�7����5;�1����S� ������gH����hE6Y�D�X�V�2t��4d�Sé�*��i BAbA#z�5��#k(&lt;W4���a�[�[&#39;�����.p�E
+�� pp�M̓���&#39;X�� �CmmX�7�І�قE�9Xv�����?1����S���3T�$���g�zȃc��ߖE%\_��k�l$����YD�U�P�7������ d�w&#39;���H��ʧ�)��ϩ�/�e�ƶzF9��u9�2��E�W�#�U+!(�Ia�Y�Ɇ$\Ui�&quot;W�+X2TG�Ř%Y[oYx����j])v��� �w��A��C�@�M� A��5���8/bZ�
+ �
+ �
+ �
+ �
+ln G�ۑK{
+�sQ���m�4��%��mY�c�M�y,vM��=&quot;��Wcط�,س��m�Hz#XL���kl���⸸5f�9D.xx2S[��b�&lt;ؙ\�D�g�=�wx\yk���[T�%V�ɋ��͆�L �����;�r�w[v�߯���5��z�o)��k��D$�H,&lt;� ��;��eF�r��m�o5�����F;��}VE�e�[��G�Ȳ�8��jK(�2�2p%$ƥO�2}k��X�~h�K�.k�&quot;��Q`���뎢�E�P\gi���9��h4Ѧ�&#39;�=�pr�V���jv�T1P�/l�zf�+_�_��\Ƃ\v�G9���륇��&lt;���K����~劧:e�?إVtc��5Ӻ��Ξ�M��r&#39;�k�r�x};�.���ٮ�R��ǩi	�V�l������4G|gO��#؂&lt;�^��]�W+��&gt;��[9�sd��L(�(�(�(�(o�����C����K7㖹�N�ZyWw� ��9�ϑ�ם;&amp;qo�Y�X�j	4;�2Fƣj�26��ŕ6�L�� �V+�SORYH�1�L=b�����!}�54#Ѽ��I5ԟ��w�d=��J�Q��j�b5�z&gt;�8�)�3Ϟ��]=�l؋Gru�L�0ai��7��»���®K��i�&#39;t��.M�6+i~�)$��6\�pP�*��n6Ge�BN�&#39;�wo�c�X�;�r��(��U�#���A�mҲn����?�-y�#�~�F��r#r7�b=�WV���c�$;/P�Bˈ�w�&quot;ʑ{�..�p}�|�N�,��^�.q��:yѵٓ���$�J&gt;P�� 2��u�U�uО#$i8Y��H�%����]��g՚ة&#39;ySmy0���S����[�7I𗋮��s1~�&lt;n���xW#Y�W����^�,��R�2�J�������Ό⺼Rr{����Gƺ�2�K�ٕu��&gt;GB�LqB�(�(�(�(���g5�
+������i�q��N����P� �%j��U�h�cj�&amp;�f6�M �Y�oS��Đ��a�a�̧��ԍ&#39;8��N�Il�u�{�!�&quot;�����x�V�P��R��8�O�+$�a��Β��Ibө�u�x{�ʼ6��r��:�����]��X����F)b6cU:�A�pI����_\�5�Cnm�*X�S�|��#���Kn�F2K�� �UG�5F��9}�RP���&lt;�pgʿr1��ßZ������v��9d��;��͔�XH�mb0���&gt;Y�H��s�ƈ���[���y�q�@�� ���(j`�t4.���d�#���*e�8�^ ���s���~H����3�� �� ����� b�r�+�I�� ���PT���\�t%���C�)�W�-^T�t�6�3�����e5�IQ�T�Ԇ`�~b��MO�������7z�(�u�@@@@s����r��_���x�Υ�$v�K����V��	�V=Uvh�N .���QnO�aY�\�%���3~�������|j�s����^P�0~���!U���cŔ����a�ȸ�eZ�y�y��f�4��h� �����QFxٙ����&quot;�Auan7�\��W.h�F�&quot;=��&quot;�	�1�c��qS�+)V�
+�����g&#39;*����Ch3��5?�Q��ώ�(�|&quot;-U��W�ײ4�.�� E
+�ʠ 9��+;2�g]D��$H�?(�v�� R�������v����S�&lt;z����$����9��2�$� ��I��l	���e|�
+�g�r-r�6������O?�[��&gt;�C�)���|^!JK0Q��״83H��U�_���6��Tp��kcDQ;�����h�6Q��&gt;�sg��{�K�2F�~���-^s盓��zh.X���5,M����a�8XI�ե��ׯ��ʨ��#�Z�6�K
+��(�(�(�(��=!� [���Z��G� �/���� e}J��Z
+h���0;UY�Q�j�ԙ��
+m0T�!-����n�G3�V�[q�:y&#39;����O���sv�#�~Շt��e�{��߾�Ĭ�ye�lk��yd��hq+�k�.�&#39;k&amp;]Z3��H%X�,{��^%:*��̫v�6���wF2��&amp;�RI;��uc���U-�N��&#39;�K�V%2UyZJ�`�P��d�1K�hr0!���q���� �Ƴ��J�T��Υ8򱍙�����q���yM��x���MD5U������;���,���)Ԧ:��ٲD��&gt;�&gt;
+	�5z�4�I��OF��w����M&amp;�l�x����cc�Q\K�����%��:�pȩ)wB��{��Ǌ���C�&lt;��3��J�Eg&amp;Lh��c@t&gt;��E�:��O���G�e�ZU��
+ �
+ �
+ �
+���-���!��y�%j�H�h��+ݕu�-��3CZ�5TF�H�]�RUj��%V�d�&gt;��i͂�v0���?����&gt;��ߗz�$o��]}q�pTS�O��G( A\n�p�i��z��&lt;�� �G�YV�40g�����z�͌�d�茕��D��S��&lt;U[z��N�uv���\������4���2h@P������
+�I�\�����1GÚ��+R0|9MO�*�9F��m�ljxk`-������:��h�����y�OԲ�a@@@T�A���p����� ��l��Q[t*�4�%u��b%&gt;k����:������\��H��D��(�ْt�H[.6T���K �i����%J�%��f%�x�w���rU�B��RM��©�h|q��E�-��
+�tL�P{j�%��F����jN�P�`�Z����|���M$$B���Q�U��׫� Oߚ�_t��e-Lwɺ�:C��E�����I�}&quot;3���&quot;��6�����g
+�T��^g&gt;�\ꛌ�E��UV̭�������[�ě���y�^OUµ}���[�J�z�cK&lt;/Y���z��3V�;��o�&quot;��6��� kp���SW��oؤ�)�,3�~p��V�dX�\� z1�j�q��� &gt;&amp;��E��g@��v��*|�5��b���ʋO$f�&amp;��7���|k1���W}�e.T�:��P�p {W�����b6R�	�%���9��@@s�Y3c�����R����r�ې�)Ƶ/���:�8�^{���Z�4�7�N+&amp;�X�,�Os0��Y�!���`���%�rUgF��]��z�#����aGýItdk\���U�0z`!�Z0N�P����Tn ׾Pvw_�� ]�j�̚���0���*�S�����?2Ds�|�����Gn�-��u+n�8�}G�+۩���Y�}�1O#$�H���#!ݿB+Y��#/D���˅&lt;�|��#�2(��U;�k�x/еD�ъK�qKݚ�)#h[Ք���sl���M~e�뤾d �c~3��No�U���?g��3o�:��Smސ�!A&gt;�H��S.kٴk.d&gt;i&quot;֛P���B�g���2�0a�Y嗲���^z�޵��1�dY�g/�g&amp;���&gt;�K�)�7,}��#8G�q���y���(P@E � S-����%�=���t���u���9��MG�/�_���޽7�������v�mI1�Vh���4d���!��+X���}�!�9%�����T�9�IGpaJ�,D����%���ިGR���o,�Ey�\��H���R�Dd���&#39;��Vt�Q�|�yF��F��l���IbIc7WP�y��ƽyYG1�&lt;1���P��\?S���j����푽[�y_���{3���1q,�n8�+F��-O��-�G��s����2���e;�Ica�.a�Һ|{���5[W�%,�m�Sc�&quot;,}kMEN�o�-Wb�T�s�*rEJ� ���2�d�
+գ2��xA�+NW�`p������X�]#v�&#39;u���,��^��+����9���h��7Oq;5�(�$��[&amp;3����[��R�G*T�^�q����� #��?��Z7�!sf�k+��TlRO������I�v�8e2b%X� {�૽���6K,�0���8�H���}nR�q%��s��3�6��ξ�}��C�ZZ^z���6za�����Y������;�������-Z$`�d+ (��L��lT�����)�*�=u�OO����C�sV^���&gt;0  Xn�.U幹�M2ɣ6�Ιr�Kr���|$��[�i�$a����������/����)��Ž�c��Ղ �
+[���8Ѱ�L�K���2��UMm
+�e�M������ �t�� ҟP�׆�����a�E&#39;I&quot;?F�Y����;��A4eѝ��AY�X�h�׉�i;# {!C��\W��uSm���J��f)&quot;���?Q�]�+�
+�{T�WMΕ�����Cv#�РD�&lt;t�D��I�:�3Vpc���L&quot;6J��#aZ�l�&quot;Ře��/� 5G��]�w����ʭM�����VǏ����ŲdM�7����ǈ���m.h���.��&lt;��Hy�K�m�:$��9$���Ó]�֞�=���X�rY��&gt;�ͷԹ\#��l���Ć;��N�&gt;$� R�ϖ��mk��\r0��� �%��ZY5����X�
+�OC���]Ȯ�W&amp;l]4È����b�G�1H��#޻�J��\Wl�$�v_q|,���%��(�8�-V��r����%F23;�	Rs�� [u��H!A�ÕX�:G���]�.�Ç���U
+�P p X^���E���P/Y3߫�M��s�Pi���5��i�T�xF���NlT�^&quot;&gt;�+䛏�\ך�q;,{&lt;#�V��ר��Z��A\�{d��~,|W�Ʒ��#���1;R6&lt;�{��x#��q�\ *��0��v:�&quot;ǩ$�~�����q�wDS�3���#�.�:�̍�2^ڎ*�x#�S�i�)����,Uo&lt;r���*�F[H�u6�DU�)�1�EXq
+DGZ4n���Z`�1v:�:_q�j�5�V����&#39;�i8�{�qfSb?&lt;��]�&gt;h�G��������y2�6n���j++)�Y5��kC���Ñ�1�Q��Ҫ�����֒5M#�t[ga���%�B�I�*���S���SF��]UC@���`^�q�W3��*�����|3��w���+���4����?�U�Z��âڳcq���V�)�gk�S�� nQU��N����o^���[���_�ģ�� Mr�(w�=�i8��`ߦ&#39;�A�X��HG�P�zg�-?G�����턊y_:�p��|�[����A�w�S��r���(�k���c�+_Q���8ʀW�Xby��QK7�Ұ�K,�YxG8���7�% ��r5�*=�c�����[�~�v��pH��:��f�D�9�2u5�lhѣ�-J�5��IqRF̛��l(i��a&quot;���IЄsn!�%Ǉ3z��;�eT�t�*ꛮjq��)V(�̻��G0x��B�&lt;��,����P�Q�c6�V�@���H�Y@ʐ��PIŉʵDɉ�+BDQm͎��NG���W�ڬ��2��,Sl��4Y��-���� 4d_�l{G�u��S&gt;�:]/�oЦ�fb$!W)7��X *�l�+.K�T����ۺ5�&gt;��1,5T]U[��~ƹڝj��_ܯ�Ͷ��B�(�^3+9�p�t#F�ź�QUY����OOB��Yۢ� %+��&amp;���� ����	�y�w}]��f?��J�ߪ��r����&lt;��Ij?���G�,�&amp;����L�&#39;ÃV+��2���89NO��l~��ЎQ�lF�&quot;���8or�,�5zU�x���0Ժ}?b8�����qv� �%s���/�z8sY�UaҼU��뱩�GX�����S`�$��Q+1��.k��o���Q&amp;x6&amp;�!�ꐀ��
+�V������t����V���k/� ��1������/�My���� ��_�!�*	��j����)/1yvV%;��� �9�B��j���U�f� �&quot;y��:-�����Ȣ8+�G\̤�uv!l��&amp;��N���̩���O��m
+�k�XwXo��#�v/�G(���[*�enU�T���+�f�t�K��iMIlXD���F�ds��Čŕ��9��Fj�&quot;t#-Fɐ��F�]�պ�,yL	j��6|��Pѵ���`(�����l������X���q�}�~U��p�|v��s5:��5�� cΟ:��4�{
+�H��B�[U@{ܯS�Je:~�9�ٹF�W�a�9�!?�2ג�⾹�2t���avÍ�LR�y#�9?
+��no�ؿ��5r�3N�a�����d�3���]�٦c�E&quot;H3#���0�Rʧ[��ԑ��Y��m���&quot;�����M�y6뱴�&#39;hp�\�$,br��P
+1�(�O���in�jR8w��6�^��������� �W/��B(���Ȏ�V=}*8M����N+9íu��X �tҬμ,��n@Z�NR�*Y0i�?(�o�D�t�޺���
+�vr�J$�YXf���cM��f�&lt;h��ʌ�׺�\�L�Mrɡ�D
+�+��� �&gt;&quot;�(�,3	�Я�$}�ʾ�`��{:�ۤq޿�,lO��k��7�ASɔ���\�O�&lt;b�L�ZL�(Jf��d�	JkBT+!�&quot;0�n������T��(�~ϖs�k�qs�6��.j�;n{,/6An�������c�z8l�����~��羻�mt������3�n�ȷ��#��ceE,��E�®��b����;#U�F�����*��T����+�׮�Tzn^G�O�T�w_�vL�B�n���y��˩��^Ƽ�F?aD�:��IͿ��q���Nr���y=͢�e���l&#39;uv�*�̼.�:�U	B���=3�fY�Tu����۩��S#XJ��&gt;�u���A�^���� ��)j��e�Na��i�$G�0WK� �oz��V�O2�E��&amp;��&#39;W��nt��&amp;���lj�c���E�lW�r&#39;7I������oX�+D�G���Q9:G���� eR�����_�&lt;Q���&#39;@&amp;G�� �T����϶��)&gt;Wr�Eۖ]#��CmȠܟM�U��vذ���dk�M�f`�#�{�� �U
+/�^�,,6��7[
+&lt;^9;�r70ч���ʡbĖM�9G�*������f�-� �:�	|��f�|Ȫ�`q+��1�q�l~͟�G�~̵MO�Y�ν�O4`=�U���=b� 2�l�������U��5�_ْ�G��1
+O~�[�,����_q��\�݆OT)�V�c��]&quot;� B9jj��,����&quot;y��i�p����=|ʋ�E�M\���� (Џ;�J�E}��R�]��b�`,�W��t~���D���y��?�K)�1xy4�����cw�T��q�^S%wv�M�U|\8�%\�Y&quot;�Gū�\���ȶ!���H����islY���5h�ӺK�$�ȢIE�[�rr� KW�ᐓ��j$�GV��?��#F;-�!��!̷��w�Y��W7	)#K�؜�PU�*�w���)�^#UD���;���T�g� �{X�hJ9X1�X���p��okj/�����I�;d��Hg�
+�F�� ���NO�y0ふ
+w���_2#|ˠ�7��w���kg��ќ��t��� UN�vV�/ƽW	��[�[��e=l9d��o5�) P P PZ�-@{@@@&lt;�Nǌ��F�)y��:Gsa*�;�F]�):o�����$�//3����q�a�����qy��W�@+��7��◮� �bR������^�+���O��¶���6�3�&#39;����I���q	�9�4�J�j�2k����7��-AWekۊ��u��ʫ��)r�I���VO&amp;mMs�~&quot;�z���tY�	�fİ�k�Oa̠��HG��xm.��9�y�Ǒ��������!�pO�t
+��ҝ��C��-؁�D��P,?� [� \�~�_Ǫ-���R`���n7y�o��+�]��RXgY5%�:��iV0g�֞�]�H��1Ȅq�[(�;�  K1:U��M\��Y%�9c�l}�O��If�t�=\K|�Hзi�����z��Q_/~�Sw�&lt;���WJ�@@@@@@@�ҵ0���&amp;�c��&quot;�̫�&gt;�W��)EMv::&#39;�����6��Zu��(5^rlʆ�j��ٺX0i(�gIS�p&quot;�&gt;*a���qy]e	����by���s��]���57*����L:���TT�@����o!$[ȶ���|o�����\�n���ߏ����v2�l&lt;�|�Z�m�b����m�Uk��ܱ4MU��e�Ƨt�8癠o�!�ƹVpU��_r�5��&quot;� ��� e����P���� ��Ȟ.��_���9�y���&gt;5b���&quot;9k� �� ctf;�������lYA� �!sĚ�Ѧ���&quot;�����2�� P P P P P P P ���G&lt;M��x�A��5�&quot;�(�,3)��hl�F���D7K�Eڢ�O�Qo^W��̫�yZu����d]���uko�p�%�iE��Ot�H�,�X�r��0@8� {��v�F`pX�Y��1��R�١����&#39;uv4�&amp;r�͑V�\a�wf벶TxHz���7,�3�)��&#39;O � ^���\yc���no,1����ry���@@@@@@@@@@@@n?ba��l&lt;R�o�F�����FN=��v�ď4�{�E�5?�_c��1�&#39;F�q0t��nv@�?���jH�|�#YY)ue����*CBM�w�y$�g�y�&lt;Ia���&lt;M� P P P P P P P P P P P P P �#���&lt;���΀�-u@ͫi���&quot;[��&#39;y�$�?��
+src/test/java/apipost/Post.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
