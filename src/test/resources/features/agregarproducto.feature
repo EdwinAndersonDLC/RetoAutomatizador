@@ -1,4 +1,5 @@
   #autor: Edwin De la cruz
+  # Reto-web
 
   Feature: Agregar productos
 
@@ -13,8 +14,6 @@
       Then  valido el total de los precios de los productos
       Then  valido cantidades de los productos agregados
       Then  valido el número de productos agregados
-
-
 
       Examples:
         | Categoria  | Subcategoria |

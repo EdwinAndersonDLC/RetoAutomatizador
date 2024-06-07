@@ -17,18 +17,15 @@ public class AgregarProductoStepdefinition {
     public void ingreso_a_la_web_de_Exito() throws InterruptedException {
         base.get("https://www.exito.com/");
         agregarProductoStep.ingreso_a_la_web_de_Exito(base.driver());
-
     }
 
     @When("preciono el boton Menu")
     public void preciono_el_boton_Menu(){
         agregarProductoStep.preciono_el_boton_Menu();
-
     }
     @And("selecciono la categoria {string}")
     public void selecciono_la_categoria(String categoria) {
         agregarProductoStep.selecciono_la_categoria(categoria);
-
     }
 
     @And  ("selecciono la subcategoria {string}")

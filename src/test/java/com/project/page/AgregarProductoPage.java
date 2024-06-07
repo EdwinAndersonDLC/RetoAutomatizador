@@ -155,11 +155,7 @@ public class AgregarProductoPage {
         }
         else
             System.out.println("El numero de los productos agregados NO es igual que en el carrito");
-
-
     }
-
-
 }
 
 
