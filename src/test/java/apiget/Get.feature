@@ -12,4 +12,4 @@ Feature: TEST API GET
 
     Examples:
       | id | status |
-      | 1  | 200    |
+      | 1  | . 200  |
